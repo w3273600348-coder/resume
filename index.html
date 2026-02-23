@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ee | Language. Is Intelligence.</title>
+    <title>王润泽 | Language. Is Intelligence.</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
@@ -91,11 +91,11 @@
                     <div className="flex-1 bg-black rounded-xl p-4 font-mono text-[10px] md:text-xs text-green-400 border border-white/5 relative overflow-hidden flex flex-col justify-end min-h-[180px]">
                         <div className="absolute top-0 left-0 w-full h-6 bg-white/5 border-b border-white/10 flex items-center px-4 space-x-2">
                             <div className="w-2 h-2 rounded-full bg-red-500"></div><div className="w-2 h-2 rounded-full bg-yellow-500"></div><div className="w-2 h-2 rounded-full bg-green-500"></div>
-                            <span className="text-gray-500 ml-4 font-sans text-[10px]">ee_live_crawler.py</span>
+                            <span className="text-gray-500 ml-4 font-sans text-[10px]">wang_runze_crawler.py</span>
                         </div>
                         <div className="space-y-1 mt-8 opacity-80">
                             {logs.map((log, i) => <div key={i}>{log}</div>)}
-                            <div><span className="text-blue-400">ee@quant-lab:~$</span> <span className="cursor-blink bg-green-400 w-2 inline-block h-3"></span></div>
+                            <div><span className="text-blue-400">runze@quant-lab:~$</span> <span className="cursor-blink bg-green-400 w-2 inline-block h-3"></span></div>
                         </div>
                     </div>
                     <div className="w-full md:w-64 flex flex-col gap-4">
@@ -131,16 +131,14 @@
 
             return (
                 <div className="relative">
-                    {/* --- 全局导航栏 --- */}
                     <nav className="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-md border-b border-white/10 h-14 flex items-center justify-center space-x-8 text-[12px] font-medium tracking-widest uppercase text-gray-400">
-                        <span className="text-white font-bold tracking-normal text-lg">ee.</span>
+                        <span className="text-white font-bold tracking-normal text-lg">王润泽</span>
                         <a href="#foundation" className="hover:text-white transition-colors">Foundation</a>
                         <a href="#ecosystem" className="hover:text-white transition-colors">Ecosystem</a>
                         <a href="#research" className="hover:text-white transition-colors">Deep Dive</a>
                         <a href="#action" className="hover:text-white transition-colors">Live Demo</a>
                     </nav>
 
-                    {/* --- 1. Hero Section --- */}
                     <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
                         <img src="./image_0.png" className="absolute inset-0 w-full h-full object-cover hero-img loaded" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
@@ -149,18 +147,16 @@
                             <h1 className="text-6xl md:text-[7rem] font-extrabold text-white leading-tight text-shadow-apple">
                                 Language. <br/> Is Intelligence.
                             </h1>
-                            <p className="mt-8 text-xl md:text-3xl text-gray-200 font-medium max-w-4xl mx-auto text-shadow-apple leading-relaxed">
-                                从北航到剑桥，从语言学到统计学。<br/> 用量化逻辑，重构对世界的理解。
+                            <p className="mt-8 text-2xl md:text-4xl text-gray-200 font-medium max-w-4xl mx-auto text-shadow-apple leading-relaxed">
+                                从北航到剑桥。<br/> 从语言学到统计学。
                             </p>
                         </div>
                     </section>
 
-                    {/* --- 2. Foundation (教育与实验室总叙事) --- */}
                     <section id="foundation" className="py-32 bg-black border-b border-white/5">
                         <div className="max-w-5xl mx-auto px-6">
                             <h2 className="text-4xl md:text-6xl font-bold mb-16 text-white reveal">The Foundation.</h2>
 
-                            {/* 教育背景 */}
                             <div className="border-t border-white/20 flex flex-col md:flex-row py-10 reveal">
                                 <div className="md:w-1/3 mb-4 md:mb-0 text-xl font-semibold text-white tracking-wide">Education</div>
                                 <div className="md:w-2/3 space-y-8 text-gray-300 font-light">
@@ -169,56 +165,49 @@
                                             <span className="text-xl font-medium text-white">北京航空航天大学 (Beihang University)</span>
                                             <span className="text-sm text-gray-500 font-medium">2022 - 2026</span>
                                         </div>
-                                        <p className="text-md text-blue-400 font-medium mb-2">语言学专业学士 (BA in Linguistics) | 跨考统计学</p>
+                                        <p className="text-md text-blue-400 font-medium mb-2">语言学专业学士 (BA in Linguistics)</p>
                                     </div>
                                     <div className="pt-4 border-t border-white/5">
                                         <div className="flex justify-between items-start mb-1">
                                             <span className="text-xl font-medium text-white">剑桥大学 (University of Cambridge)</span>
                                             <span className="text-sm text-gray-500 font-medium">2023</span>
                                         </div>
-                                        <p className="text-md text-blue-400 font-medium mb-2">格顿学院 (Girton College) | 跨学科交流</p>
-                                        <p className="text-sm leading-relaxed text-gray-400">拓展理科边界，深入学习自然科学与量子力学模块，构建严谨的科学推演思维体系。</p>
+                                        <p className="text-md text-blue-400 font-medium mb-2">自然科学与量子力学模块访学</p>
                                     </div>
                                 </div>
                             </div>
 
-                            {/* 实验室与核心科研里程碑 (纯文本总览) */}
                             <div className="border-t border-white/20 flex flex-col md:flex-row py-10 reveal">
                                 <div className="md:w-1/3 mb-4 md:mb-0 text-xl font-semibold text-white tracking-wide">National Labs & Milestones</div>
                                 <div className="md:w-2/3 space-y-8 text-gray-300 font-light">
-
                                     <div className="flex items-start">
                                         <span className="text-blue-500 mr-4 mt-1">●</span>
                                         <div>
-                                            <div className="text-white font-medium text-lg mb-1">工信部重点实验室 & 中宣部舆情实验室</div>
+                                            <div className="text-white font-medium text-lg mb-1">工信部“语言信息与智能计算”重点实验室 & 中宣部舆情实验室</div>
                                             <div className="text-sm text-gray-400 leading-relaxed mb-1">
-                                                依托两大国家级科研平台，完成基于机器学习与决策树理论的系统性科研攻关。主导产出《基于语料库的习近平新时代中国特色社会主义思想核心概念及其外宣策略研究》，获 <strong>航语杯一等奖</strong>。
+                                                主导《基于语料库的习近平新时代中国特色社会主义思想核心概念及其外宣策略研究》。获 <strong>航语杯一等奖</strong>。
                                             </div>
                                         </div>
                                     </div>
-
                                     <div className="flex items-start">
                                         <span className="text-blue-500 mr-4 mt-1">●</span>
                                         <div>
                                             <div className="text-white font-medium text-lg mb-1">多维度量化分析应用</div>
-                                            <div className="text-sm text-gray-400 leading-relaxed mb-1">撰写《后疫情时代外媒视角下的中国新经济发展研究》，横扫三大赛道。获 <strong>社科杯一等奖、航语杯一等奖、冯如杯三等奖</strong>。</div>
+                                            <div className="text-sm text-gray-400 leading-relaxed mb-1">撰写《后疫情时代外媒视角下的中国新经济发展研究》。获 <strong>社科杯一等奖、航语杯一等奖、冯如杯三等奖</strong>。</div>
                                         </div>
                                     </div>
-
                                     <div className="flex items-start">
                                         <span className="text-blue-500 mr-4 mt-1">●</span>
                                         <div>
                                             <div className="text-white font-medium text-lg mb-1">前沿算法探索与应用</div>
-                                            <div className="text-sm text-gray-400 leading-relaxed">目前正深入推演《Distinguishing Human from Machine》，将随机森林等集成算法引入复杂句法提取系统，目标投递国际顶级学术期刊。</div>
+                                            <div className="text-sm text-gray-400 leading-relaxed">深入推演《Distinguishing Human from Machine》，将随机森林等集成算法引入句法提取系统。</div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </section>
 
-                    {/* --- 3. Ecosystem: 技术矩阵 --- */}
                     <section id="ecosystem" className="py-32 bg-[#0a0a0a] border-b border-white/5 relative overflow-hidden">
                         <div className="max-w-7xl mx-auto px-6">
                             <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gradient text-center reveal">The Ecosystem.</h2>
@@ -248,7 +237,6 @@
                         </div>
                     </section>
 
-                    {/* --- 4. Highlights: 剑桥高光 & 篮球竞技 --- */}
                     <section id="highlights" className="py-32 px-6 md:px-24 bg-black border-b border-white/5">
                         <div className="max-w-7xl mx-auto">
                             <h2 className="text-5xl md:text-7xl font-bold mb-16 text-gradient text-center reveal">Moments of impact.</h2>
@@ -277,15 +265,13 @@
                         </div>
                     </section>
 
-                    {/* --- 5. Deep Dive: 三大核心图表 (极简摘要呈现) --- */}
                     <section id="research" className="py-32 bg-[#0a0a0a] relative">
-                        {/* 图表 1：中宣部语料核心概念提取 */}
                         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center mb-32 border-b border-white/5 pb-32">
                             <div className="reveal">
                                 <h3 className="text-emerald-500 font-bold mb-4 tracking-widest uppercase text-sm">Corpus Analytics</h3>
-                                <h2 className="text-5xl font-bold mb-8 text-white">宏大叙事的量化解构。</h2>
+                                <h2 className="text-5xl font-bold mb-8 text-white">时政文本的特征提取。</h2>
                                 <p className="text-gray-400 text-lg font-light leading-relaxed mb-8">
-                                    在研究中，通过构建专门的计算语料库，运用共现频率与互信息评分（MI Score），成功从海量时政文本中精准提取出核心理论的词汇权重与概念层级。
+                                    构建专门的计算语料库，运用共现频率与互信息评分（MI Score），提取核心概念的词汇权重分布。
                                 </p>
                             </div>
                             <div className="reveal glass p-6 rounded-[2.5rem] bg-[#111]">
@@ -294,7 +280,6 @@
                             </div>
                         </div>
 
-                        {/* 图表 2：外媒情感分析 */}
                         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center mb-32 border-b border-white/5 pb-32">
                             <div className="reveal order-2 md:order-1 glass p-8 rounded-[3rem] bg-[#111]">
                                 <img src="./sentiment_chart.png" className="w-full h-auto rounded-2xl" />
@@ -304,18 +289,17 @@
                                 <h3 className="text-pink-500 font-bold mb-4 tracking-widest uppercase text-sm">Sentiment Analysis</h3>
                                 <h2 className="text-5xl font-bold mb-8 text-white">媒体话语的情感测量。</h2>
                                 <p className="text-gray-400 text-lg font-light leading-relaxed mb-8">
-                                    对后疫情时代的外媒经济报道进行时间序列分析与名词动词强搭配提取。直观且可量化地呈现了全球媒体对华态度中“积极词汇”与“事实词汇”的演变与倾斜。
+                                    对后疫情时代经济报道进行时间序列分析与强搭配提取。量化呈现“积极词汇”与“事实词汇”的演变倾斜。
                                 </p>
                             </div>
                         </div>
 
-                        {/* 图表 3：随机森林句法识别 */}
                         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
                             <div className="reveal">
                                 <h3 className="text-blue-500 font-bold mb-4 tracking-widest uppercase text-sm">Machine Learning</h3>
                                 <h2 className="text-5xl font-bold mb-8 leading-tight text-white">挖掘句法的隐形指纹。</h2>
                                 <p className="text-gray-400 text-lg font-light leading-relaxed mb-8">
-                                    通过训练随机森林分类器，针对 14 个句法维度进行 Gini Importance 计算。模型成功锁定了 <strong>CN/T (复杂名词短语)</strong> 为判别 AI 文本生成特征的决定性权重指标。
+                                    训练随机森林分类器，针对 14 个句法维度进行 Gini Importance 计算。模型锁定 <strong>CN/T (复杂名词短语)</strong> 为判别特征的决定性指标。
                                 </p>
                             </div>
                             <div className="reveal glass p-6 rounded-[2.5rem] shadow-[0_0_50px_rgba(0,113,227,0.1)]">
@@ -325,13 +309,12 @@
                         </div>
                     </section>
 
-                    {/* --- 6. Live Action Sentinel (实时爬虫哨兵) --- */}
                     <section id="action" className="py-32 bg-black border-t border-white/10">
                         <div className="max-w-6xl mx-auto px-6">
                             <div className="text-center reveal mb-16">
                                 <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">Real-time Quantitative Sentinel</h2>
                                 <p className="text-gray-400 max-w-2xl mx-auto font-light">
-                                    不只是学术沙盘推演。这展示了我基于 Python 构建的实时数据监测流水线（Data Pipeline），涵盖从 API 数据获取、清洗，到量化指标输出的端到端执行力。
+                                    基于 Python 构建的实时数据监测流水线（Data Pipeline），涵盖从非结构化数据获取、清洗，到量化指标输出的端到端执行。
                                 </p>
                             </div>
                             <div className="reveal">
@@ -340,7 +323,6 @@
                         </div>
                     </section>
 
-                    {/* --- 7. Summary: 经典四宫格压轴 --- */}
                     <section id="summary" className="py-32 bg-[#050505] reveal border-t border-white/5">
                         <div className="max-w-7xl mx-auto px-6 text-center">
                             <h2 className="text-5xl md:text-[80px] font-extrabold tracking-tighter mb-6 text-gradient">Supercharged by Statistics.</h2>
@@ -367,28 +349,28 @@
                         </div>
                     </section>
 
-                    {/* --- 8. Footer / Call to Action --- */}
                     <footer id="contact" className="py-40 bg-[#161617] text-center px-4 relative z-10 border-t border-white/5">
                         <div className="max-w-4xl mx-auto reveal">
                             <img src="./image_1.png" className="w-32 h-32 mx-auto rounded-full object-cover mb-12 border-4 border-white/10 shadow-2xl" alt="Profile" />
-                            <h2 className="text-4xl md:text-6xl font-bold mb-14 text-white">重构逻辑。预见未来。</h2>
+                            <h2 className="text-4xl md:text-6xl font-bold mb-14 text-white">
+                                将语言、数据与 AI 结合，<br/>创造无限可能。
+                            </h2>
                             <button onClick={() => setIsContactOpen(true)} className="apple-btn text-lg px-12 py-4">联系我</button>
 
                             <div className="mt-32 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-[11px] text-gray-500 font-medium uppercase tracking-widest">
                                 <span>Built for High-Frequency Logic & Execution</span>
-                                <span className="mt-4 md:mt-0">Copyright © 2026 ee.</span>
+                                <span className="mt-4 md:mt-0">Copyright © 2026 王润泽.</span>
                             </div>
                         </div>
                     </footer>
 
-                    {/* --- 真实交互式名片弹窗 --- */}
                     {isContactOpen && (
                         <div className="fixed inset-0 z-[100000] flex items-center justify-center bg-black/60 backdrop-blur-xl p-4 modal-enter">
                             <div className="absolute inset-0 cursor-pointer" onClick={() => setIsContactOpen(false)}></div>
                             <div className="bg-[#1c1c1e] w-full max-w-sm rounded-[2rem] p-8 border border-white/10 relative text-center shadow-2xl">
                                 <button onClick={() => setIsContactOpen(false)} className="absolute top-5 right-5 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors text-white">✕</button>
                                 <img src="./image_1.png" className="w-20 h-20 mx-auto rounded-full object-cover mb-6 border-2 border-white/10" />
-                                <h3 className="text-2xl font-bold mb-1 text-white">ee.</h3>
+                                <h3 className="text-2xl font-bold mb-1 text-white">王润泽</h3>
                                 <p className="text-gray-400 text-xs mb-8 uppercase tracking-widest">Linguistics & Statistics</p>
 
                                 <div className="space-y-4 text-left">
