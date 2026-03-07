@@ -59,7 +59,7 @@
             }
 
             /* 4. 解决下半部分图片在手机端过高导致比例失调的问题 */
-            .md\\:col-span-8 img {
+            .md\:col-span-8 img {
                 height: 350px !important;
             }
         }
@@ -156,8 +156,8 @@
 
             return (
                 <div className="relative">
-                    <nav className="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-md border-b border-white/10 h-14 flex items-center justify-center space-x-8 text-[12px] font-medium tracking-widest uppercase text-gray-400">
-                        <span className="text-white font-bold tracking-normal text-lg">王润泽</span>
+                    <nav className="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-md border-b border-white/10 min-h-[3.5rem] py-2 md:py-0 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 md:space-x-8 text-[10px] md:text-[12px] font-medium tracking-widest uppercase text-gray-400">
+                        <span className="text-white font-bold tracking-normal text-sm md:text-lg w-full md:w-auto text-center mb-1 md:mb-0">王润泽</span>
                         <a href="#foundation" className="hover:text-white transition-colors">Foundation</a>
                         <a href="#ecosystem" className="hover:text-white transition-colors">Ecosystem</a>
                         <a href="#research" className="hover:text-white transition-colors">Deep Dive</a>
