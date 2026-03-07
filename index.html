@@ -38,6 +38,31 @@
         .font-mono { font-family: 'Fira Code', monospace; }
         @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
         .cursor-blink { animation: blink 1s step-end infinite; }
+
+        /* --- 手机端专项适配修复 --- */
+        @media (max-width: 768px) {
+            /* 1. 解决封面图“只看黑板不看人”的问题，将视觉重心强制右移 80% */
+            .hero-img {
+                object-position: 80% center !important;
+            }
+
+            /* 2. 强制图片显示基础属性，防止特定移动端浏览器渲染失败 */
+            img {
+                display: block !important;
+                /* 修复手机端滚动触发延迟导致的透明度不恢复问题 */
+                opacity: 1 !important;
+            }
+
+            /* 3. 略微缩短移动端动画偏移距离，避免出框 */
+            .reveal {
+                transform: translateY(20px);
+            }
+
+            /* 4. 解决下半部分图片在手机端过高导致比例失调的问题 */
+            .md\\:col-span-8 img {
+                height: 350px !important;
+            }
+        }
     </style>
 </head>
 <body>
